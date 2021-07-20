@@ -2,7 +2,7 @@
 
 歡迎來到 WiwiHo 的~~唬爛專區~~競程筆記，這裡會整理我的筆記和上過課的內容，希望對你有幫助。
 
-文章原檔都在 [GitHub]() 上，如果有任何疑問，請至 [issue]()，~~如果你想幫我寫，請至 [pull request]()~~。
+文章原檔都在 [GitHub](https://github.com/wiwiho/cpnote-source) 上，如果有任何疑問，請至 [issue](https://github.com/wiwiho/cpnote-source/issues)，~~如果你想幫我寫，請至 [pull request](https://github.com/wiwiho/cpnote-source/pulls)~~。
 
 ## 關於我
 
