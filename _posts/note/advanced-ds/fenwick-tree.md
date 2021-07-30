@@ -58,7 +58,7 @@ void modify(int pos, int x){ // 把 pos 改成 x
 區間以 $pos$ 為結尾的節點是 $pos$，而節點 $pos$ 的區間剛好緊接在它的父節點之後，它的父節點是 $pos - lowbit(pos)$，所以只要找到 $pos$ 和它所有祖先節點，這些區間聯集起來就是我們想要的前綴。
 
 實作也非常簡單：
-```
+```cpp
 type query(int pos){
     type ans;
     for(; pos > 0; pos -= lowbit(pos)){
@@ -81,7 +81,7 @@ BIT 最基礎的應用就是拿來算前綴和，因為和是一種「可返回�
 BIT 前綴和和差分結合使用，就可以做到 $O(1)$ 區間修改、$O(\log n)$ 單點查詢。
 
 BIT 也可以區間修改、區間查詢前綴和。先算出要做的序列 $A$ 的差分序列 $D$，$A$ 的索引從 $1$ 開始，然後我們可以得出 $[1,x]$ 這個區間的和是：
-$$\sum_{i=1}^x a_i = \sum_{i=1}^x D_i \times (x-i+1)\\
+$$\sum_{i=1}^x A_i = \sum_{i=1}^x D_i \times (x-i+1)\\
 =D_1 \times x + D_2 \times (x-1) + ... + D_x \times 1$$
 
 然後可以把它化成：
