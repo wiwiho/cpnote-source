@@ -2,6 +2,7 @@
 - 雜項
     - [複雜度](/complexity)
     - [前置處理器](/preprocessor)
+    - [前綴和與差分](/prefix-sum)
     - 輸入輸出
         - [I/O Stream](/iostream)
         - [String Stream](/stringstream)
