@@ -98,7 +98,7 @@ void modify(type value, int pos, int L, int R, vertex v){
         return;
     }
     int M = (L + R) / 2; // [L,R] 區間的中點
-    // 將這個區間二等分，左半的範圍是 [L,R]，右半是 [M+1,R]
+    // 將這個區間二等分，左半的範圍是 [L,M]，右半是 [M+1,R]
     if(pos >= L && pos <= M) // pos 在左半部
         modify(value, pos, L, M, v的左子節點);
     else // pos 在右半部
