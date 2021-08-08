@@ -22,12 +22,13 @@ bool collinearity(pair<T, T> p1, pair<T, T> p2, pair<T, T> p3){
 $$\overrightarrow{PA}\times\overrightarrow{PB}=0$$
 
 在確定共線後，我們還不能確定 $P$ 是否在 $\overline{AB}$ 上，所以我們還要判斷 $A$、$B$ 是否在 $P$ 的兩側，這時可以用內積：
-$$\overrightarrow{PA}\cdot\overrightarrow{PB}<0$$
+$$\overrightarrow{PA}\cdot\overrightarrow{PB} \leq 0$$
+$=0$ 的狀況會發生在 $P$ 是 $A$ 或 $B$ 的時候。
 
 ```cpp=
 template<typename T>
 bool inLine(pair<T, T> a, pair<T, T> b, pair<T, T> p){
-    return collinearity(a, b, p) && dot(a - p, b - p) < 0;
+    return collinearity(a, b, p) && dot(a - p, b - p) <= 0;
 }
 ```
 
