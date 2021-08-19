@@ -1,3 +1,6 @@
+---
+title: Aliens 優化
+---
 # Aliens 優化
 
 Aliens 優化是 DP 優化的一種，先看例題：[AI-666 賺多少](https://zerojudge.tw/ShowProblem?problemid=c457)，雖然這題有 Greedy 的作法，但我們要用 Aliens 優化來做。

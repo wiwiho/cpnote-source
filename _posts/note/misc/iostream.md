@@ -1,3 +1,6 @@
+---
+title: I/O Stream
+---
 # I/O Stream
 
 ## 簡介

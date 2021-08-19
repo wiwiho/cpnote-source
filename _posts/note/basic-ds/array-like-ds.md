@@ -1,3 +1,6 @@
+---
+title: 類陣列容器
+---
 # 類陣列容器
 
 本文提到的資料結構在 STL 裡都有實作，詳細用法請自己看 [cppreference](https://en.cppreference.com/w/cpp/container)。

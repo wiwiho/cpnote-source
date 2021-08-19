@@ -1,3 +1,6 @@
+---
+title: 最長迴文子字串
+---
 # 最長迴文子字串（Longest Palindromic Substring, LPS）
 
 給一個字串 $S$，求 $S$ 中最長的為迴文的子字串長度。

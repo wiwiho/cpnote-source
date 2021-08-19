@@ -1,3 +1,6 @@
+---
+title: Sparse Table
+---
 # Sparse Table
 
 > 有一個序列 $A$，有 $Q$ 筆詢問，每筆詢問求 $[l,r]$ 的區間最大值。
