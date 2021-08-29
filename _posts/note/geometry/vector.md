@@ -188,28 +188,28 @@ pair<T, T> operator-(pair<T, T> a, pair<T, T> b){
     return mp(a.F - b.F, a.S - b.S);
 }
 
-template<typename T> //純量乘法
-pair<T, T> operator*(pair<T, T> a, T i){
-    return mp(i * a.F, i * a.S);
+template<typename T>
+pair<T, T> operator*(pair<T, T> a, T b){
+    return mp(a.F * b, a.S * b);
 }
 
-template<typename T> //純量除法
-pair<T, T> operator/(pair<T, T> a, T i){
-    return mp(a.F / i, a.S / i);
+template<typename T>
+pair<T, T> operator/(pair<T, T> a, T b){
+    return mp(a.F / b, a.S / b);
 }
 
-template<typename T> //內積
-pair<T, T> dot(pair<T, T> a, pair<T, T> b){
-    return mp(a.F * b.F, a.S * b.S);
+template<typename T>
+T dot(pair<T, T> a, pair<T, T> b){
+    return a.F * b.F + a.S * b.S;
 }
 
-template<typename T> //外積
+template<typename T>
 T cross(pair<T, T> a, pair<T, T> b){
-    return mp(a.F * b.S, a.S * b.F);
+    return a.F * b.S - a.S * b.F;
 }
 
-template<typename T> //向量長的平方
-T vabs2(pair<T, T> a){
+template<typename T>
+T abs2(pair<T, T> a){
     return a.F * a.F + a.S * a.S;
 }
 ```
