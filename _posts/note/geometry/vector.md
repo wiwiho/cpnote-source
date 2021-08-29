@@ -16,17 +16,17 @@ title: 向量
 $\left[ \begin{array}{c}
 v_1\\
 v_2\\
-...
+\vdots
 \end{array} 
 \right ]$ 
 或 
 $\left[ \begin{array}{ccc}
-v1 & v2 & ...
+v1 & v2 & \dots
 \end{array} 
 \right ]$ 
-這種形式的，也有放在 tuple 裡，寫成 $(v_1, v_2, ...)$ 的，如果沒有特別需要用到矩陣，通常會用 tuple 來表示。
+這種形式的，也有放在 tuple 裡，寫成 $(v_1, v_2, \dots)$ 的，如果沒有特別需要用到矩陣，通常會用 tuple 來表示。
 
-一個 $n$ 維向量 $(v_1,v_2,...,v_n)$ 的長度可以用畢氏定理來算：
+一個 $n$ 維向量 $(v_1,v_2,\dots,v_n)$ 的長度可以用畢氏定理來算：
 $$\sqrt{\sum_{i=1}^n v_i^2}$$
 
 長度為 $0$ 的向量稱為「零向量」，零向量可以是任意方向的。為了方便，除非特別註明，接下來提到的向量都不包含零向量。
@@ -45,7 +45,7 @@ $$\sqrt{\sum_{i=1}^n v_i^2}$$
 ### 加減
 
 兩個向量可以相加得到新的向量，就把所有維度的分量分別相加就好：
-$$(u_1,u_2,u_3,...) + (v_1,v_2,v_3,...) = (u_1 + v_1, u_2 + v_2, u_3 + v_3, ...)$$
+$$(u_1,u_2,u_3,\dots) + (v_1,v_2,v_3,\dots) = (u_1 + v_1, u_2 + v_2, u_3 + v_3, \dots)$$
 
 例如，$(2,3)+(3,1)=(5,4)$：
 
@@ -60,7 +60,7 @@ $$(u_1,u_2,u_3,...) + (v_1,v_2,v_3,...) = (u_1 + v_1, u_2 + v_2, u_3 + v_3, ...)
 ### 純量乘法
 
 沒有方向的量稱為純量，像是 $1$、$\frac{1}{2}$、$\pi$ 這些數字都是純量。向量可以乘上一個純量，得到一個新的向量，也就是將這個向量的長度乘上某一個數字，得到一個新的向量，這個動作非常簡單，就把每個維度的分量都乘上這個純量就好：
-$$i(v_1, v_2, v_3, ...)=(iv_1, iv_2, iv_3, ...)$$
+$$i(v_1, v_2, v_3, \dots)=(iv_1, iv_2, iv_3, \dots)$$
 
 例如，$2 \times (2,3)=(4,6)$：  
 
@@ -68,7 +68,7 @@ $$i(v_1, v_2, v_3, ...)=(iv_1, iv_2, iv_3, ...)$$
 
 ### 內積（點積）
 
-這是向量特有的運算，兩個夾角是 $\theta$ 的 $n$ 維向量 $\overrightarrow{u}=(u_1,u_2,...,u_n)$ 和 $\overrightarrow{v}=(v_1,v_2,...,v_n)$ 的內積記作 $\overrightarrow{u} \cdot \overrightarrow{v}$，結果是一個純量：
+這是向量特有的運算，兩個夾角是 $\theta$ 的 $n$ 維向量 $\overrightarrow{u}=(u_1,u_2,\dots,u_n)$ 和 $\overrightarrow{v}=(v_1,v_2,\dots,v_n)$ 的內積記作 $\overrightarrow{u} \cdot \overrightarrow{v}$，結果是一個純量：
 $$\overrightarrow{u} \cdot \overrightarrow{v} = |\overrightarrow{u}||\overrightarrow{v}|\cos\theta = \sum_{i=1}^{n} u_iv_i$$
 
 其實就是把每一個維度的分量長相乘後相加，例如二維向量 $(x_1, y_1) \cdot (x_2, y_2) = x_1x_2 + y_1y_2$。意義是作一個 $\overrightarrow{u}$ 在 $\overrightarrow{v}$ 上垂直投影的向量，然後將這個向量的長和 $\overrightarrow{v}$ 的長相乘。

@@ -87,4 +87,4 @@ a = a ^ b;
 > $a_1 = t \oplus b_1 = a_0 \oplus b_0 \oplus a_0 = b_0$
 
 可以發現到在做 xor 時，每個人都是自己的反元素，因為 $A \oplus A = 0$，既然如此，就可以拿去做前綴 xor：
-$$S_l \oplus S_{l + 1} \oplus ... \oplus S_{r - 1} \oplus S_r = (S_1 \oplus S_2 \oplus ... \oplus S_{r - 1} \oplus S_r) \oplus (S_1 \oplus S_2 \oplus ... \oplus S_{l - 2} \oplus S_{l - 1})$$
+$$S_l \oplus S_{l + 1} \oplus \dots \oplus S_{r - 1} \oplus S_r = (S_1 \oplus S_2 \oplus \dots \oplus S_{r - 1} \oplus S_r) \oplus (S_1 \oplus S_2 \oplus \dots \oplus S_{l - 2} \oplus S_{l - 1})$$
