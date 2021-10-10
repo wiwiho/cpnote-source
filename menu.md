@@ -17,6 +17,10 @@
 - 動態規劃
     - DP 優化
         - [Aliens 優化](/aliens)
+- 數學
+    - [歐幾里得演算法](/gcd)
+    - [快速冪](/pow)
+    - [質數與因數](/prime-and-factor)
 - 幾何
     - [向量](/vector)
     - [向量應用](/vector-application)
