@@ -27,3 +27,16 @@ title: 我教過的課
 - 計算幾何：[講義](https://drive.google.com/file/d/1m22T3llYm2DpTYcif54OwvXHJYo-CsLT/view?usp=sharing) ⦁ [簡報](https://drive.google.com/file/d/1nKskqTWaTC6oEaW57s5wcraQAeKJWL0x/view?usp=sharing)
 - 字串：[講義](https://drive.google.com/file/d/1xnc89nQbvL2wcdHT3OUP2alRB0aHZP6K/view?usp=sharing) ⦁ [簡報](https://drive.google.com/file/d/1tn2FLrbTSDhPyDhA7jgHhdkzPVRNnvmb/view?usp=sharing)
 - 進階資料結構：[講義](https://drive.google.com/file/d/1XT5vANL4HWSprjnR4FZ9qkoMFSEzH-vE/view?usp=sharing)
+
+## 2021 師大附中暑期培訓
+- 進階圖論：[簡報](https://drive.google.com/file/d/1v2HFy6gVBVp-kC2ZV1iEwMFRIAPthEl3/view?usp=sharing)
+- 數學：[簡報](https://drive.google.com/file/d/1Uycbou4RC201-DlQ-2s4foBxuTzVkuCO/view?usp=sharing)
+- 計算幾何：[簡報](https://drive.google.com/file/d/1tWumEKJCgP05Hs1Ufk1B0r6HsH28VIpi/view?usp=sharing)
+- 進階資料結構：[簡報](https://drive.google.com/file/d/1Dz-1vnsIGpa5zPi85xxtbkL9URMMRr6M/view?usp=sharing)
+
+## 2021 師大附中北市賽培訓
+- 比賽策略：[簡報](https://drive.google.com/file/d/1ENf2A7jyENqMrDaaOhs5tR1H3bvSwG2w/view?usp=sharing)（內含分治法）
+- 基礎演算法：[簡報](https://drive.google.com/file/d/1Oaj5MKubLd6zaieRZ9C5QBEmM-PlmRrt/view?usp=sharing)
+- 圖論：[簡報](https://drive.google.com/file/d/1a1mgK8KFJWNoXATHwi3E6ceStn22QmZl/view?usp=sharing)
+- 數學：[簡報](https://drive.google.com/file/d/10mXQwUZ-7OQasV3DFYGN_VW8R47QNttu/view?usp=sharing)
+- 資料結構：[簡報](https://drive.google.com/file/d/1VuKVgbQW8He8jzJV8bcDxHYK3edJQlD-/view?usp=sharing)
