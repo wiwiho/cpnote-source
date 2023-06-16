@@ -1,0 +1,217 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=40cm, paperheight=10cm, margin=1cm]{geometry}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{ulem}
+\usepackage{version}
+\usepackage{thmtools}
+\usepackage{qtree}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage{minted}
+\usepackage{mdframed}
+\usepackage{lipsum}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\setCJKmainfont{Noto Serif CJK TC}
+\setmonofont{Source Code Pro}
+\usetikzlibrary{arrows,decorations.markings,decorations.pathreplacing}
+\pagestyle{empty}
+
+\tikzstyle {graph node} = [circle, draw, minimum width=1cm]
+\tikzset{edge/.style = {decoration={markings,mark=at position 1 with %
+            {\arrow[scale=2,>=stealth]{>}}},postaction={decorate}}}
+
+\renewcommand{\baselinestretch}{1.3}
+
+\newtheoremstyle{owo}% name of the style to be used
+  {10pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {10pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  { }% punctuation between head and body
+  { }% space after theorem head; " " = normal interword space
+  {\thmname{#1}\thmnumber{ #2}.\thmnote{ (#3)}}
+
+\theoremstyle{owo}
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Observation}{Observation}
+\newtheorem{Corollary}{Corollary}
+\newtheorem*{Proof}{Proof}
+
+\DeclareMathOperator*{\argmin}{argmin}
+
+\hypersetup{
+    %colorlinks=true,
+    }
+
+\usemintedstyle{vs}
+\renewcommand{\theFancyVerbLine}{\ttfamily\normalsize\arabic{FancyVerbLine}}
+\newenvironment{Code}[1]{~\vspace{-15pt}\VerbatimEnvironment\begin{minted}[bgcolor=black!5!white, breaklines, linenos]{#1}}{\end{minted}}
+
+\newcommand{\Inline}{\mintinline[bgcolor=black!5!white, breaklines]{text}}
+
+\newmdenv[topline=false, bottomline=false, rightline=false, linewidth=3pt, linecolor=black!10!white]{Quotemd}
+\newenvironment{Quote}{~\vspace{-15pt}\begin{Quotemd}}{\end{Quotemd}}
+
+\begin{document}
+
+\setlength\parindent{20pt}
+\setlength\parskip{10pt}
+
+\setlist[enumerate]{itemsep=0pt, parsep=0pt, topsep=0pt}
+\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=0pt}
+
+\tikzstyle {normal node} = [circle, draw, minimum width=0.8cm]
+\tikzstyle {pass node} = [circle, draw, fill, minimum width=0.8cm, red!70!white]
+\tikzstyle {end node} = [circle, draw, fill, minimum width=0.8cm, blue!70!white]
+\tikzstyle {more node} = [circle, draw, fill, minimum width=0.8cm, black!20!white]
+
+\centering
+\begin{tikzpicture}
+\node[pass node] (v1) at (16.5,0) {};
+\node[pass node] (v2) at (8.5,-1) {};
+\draw (v1) -- (v2);
+\node[normal node] (v4) at (4.5,-2) {};
+\draw (v2) -- (v4);
+\node[normal node] (v8) at (2.5,-3) {};
+\draw (v4) -- (v8);
+\node[normal node] (v16) at (1.5,-4) {};
+\draw (v8) -- (v16);
+\node[normal node] (v32) at (1.0,-5) {};
+\draw (v16) -- (v32);
+\node[normal node] (v33) at (2.0,-5) {};
+\draw (v16) -- (v33);
+\node[normal node] (v17) at (3.5,-4) {};
+\draw (v8) -- (v17);
+\node[normal node] (v34) at (3.0,-5) {};
+\draw (v17) -- (v34);
+\node[normal node] (v35) at (4.0,-5) {};
+\draw (v17) -- (v35);
+\node[normal node] (v9) at (6.5,-3) {};
+\draw (v4) -- (v9);
+\node[normal node] (v18) at (5.5,-4) {};
+\draw (v9) -- (v18);
+\node[normal node] (v36) at (5.0,-5) {};
+\draw (v18) -- (v36);
+\node[normal node] (v37) at (6.0,-5) {};
+\draw (v18) -- (v37);
+\node[normal node] (v19) at (7.5,-4) {};
+\draw (v9) -- (v19);
+\node[normal node] (v38) at (7.0,-5) {};
+\draw (v19) -- (v38);
+\node[normal node] (v39) at (8.0,-5) {};
+\draw (v19) -- (v39);
+\node[pass node] (v5) at (12.5,-2) {};
+\draw (v2) -- (v5);
+\node[pass node] (v10) at (10.5,-3) {};
+\draw (v5) -- (v10);
+\node[pass node] (v20) at (9.5,-4) {};
+\draw (v10) -- (v20);
+\node[normal node] (v40) at (9.0,-5) {};
+\draw (v20) -- (v40);
+\node[end node] (v41) at (10.0,-5) {};
+\draw (v20) -- (v41);
+\node[end node] (v21) at (11.5,-4) {};
+\draw (v10) -- (v21);
+\node[more node] (v42) at (11.0,-5) {};
+\draw (v21) -- (v42);
+\node[more node] (v43) at (12.0,-5) {};
+\draw (v21) -- (v43);
+\node[end node] (v11) at (14.5,-3) {};
+\draw (v5) -- (v11);
+\node[more node] (v22) at (13.5,-4) {};
+\draw (v11) -- (v22);
+\node[more node] (v44) at (13.0,-5) {};
+\draw (v22) -- (v44);
+\node[more node] (v45) at (14.0,-5) {};
+\draw (v22) -- (v45);
+\node[more node] (v23) at (15.5,-4) {};
+\draw (v11) -- (v23);
+\node[more node] (v46) at (15.0,-5) {};
+\draw (v23) -- (v46);
+\node[more node] (v47) at (16.0,-5) {};
+\draw (v23) -- (v47);
+\node[pass node] (v3) at (24.5,-1) {};
+\draw (v1) -- (v3);
+\node[end node] (v6) at (20.5,-2) {};
+\draw (v3) -- (v6);
+\node[more node] (v12) at (18.5,-3) {};
+\draw (v6) -- (v12);
+\node[more node] (v24) at (17.5,-4) {};
+\draw (v12) -- (v24);
+\node[more node] (v48) at (17.0,-5) {};
+\draw (v24) -- (v48);
+\node[more node] (v49) at (18.0,-5) {};
+\draw (v24) -- (v49);
+\node[more node] (v25) at (19.5,-4) {};
+\draw (v12) -- (v25);
+\node[more node] (v50) at (19.0,-5) {};
+\draw (v25) -- (v50);
+\node[more node] (v51) at (20.0,-5) {};
+\draw (v25) -- (v51);
+\node[more node] (v13) at (22.5,-3) {};
+\draw (v6) -- (v13);
+\node[more node] (v26) at (21.5,-4) {};
+\draw (v13) -- (v26);
+\node[more node] (v52) at (21.0,-5) {};
+\draw (v26) -- (v52);
+\node[more node] (v53) at (22.0,-5) {};
+\draw (v26) -- (v53);
+\node[more node] (v27) at (23.5,-4) {};
+\draw (v13) -- (v27);
+\node[more node] (v54) at (23.0,-5) {};
+\draw (v27) -- (v54);
+\node[more node] (v55) at (24.0,-5) {};
+\draw (v27) -- (v55);
+\node[pass node] (v7) at (28.5,-2) {};
+\draw (v3) -- (v7);
+\node[pass node] (v14) at (26.5,-3) {};
+\draw (v7) -- (v14);
+\node[end node] (v28) at (25.5,-4) {};
+\draw (v14) -- (v28);
+\node[more node] (v56) at (25.0,-5) {};
+\draw (v28) -- (v56);
+\node[more node] (v57) at (26.0,-5) {};
+\draw (v28) -- (v57);
+\node[normal node] (v29) at (27.5,-4) {};
+\draw (v14) -- (v29);
+\node[normal node] (v58) at (27.0,-5) {};
+\draw (v29) -- (v58);
+\node[normal node] (v59) at (28.0,-5) {};
+\draw (v29) -- (v59);
+\node[normal node] (v15) at (30.5,-3) {};
+\draw (v7) -- (v15);
+\node[normal node] (v30) at (29.5,-4) {};
+\draw (v15) -- (v30);
+\node[normal node] (v60) at (29.0,-5) {};
+\draw (v30) -- (v60);
+\node[normal node] (v61) at (30.0,-5) {};
+\draw (v30) -- (v61);
+\node[normal node] (v31) at (31.5,-4) {};
+\draw (v15) -- (v31);
+\node[normal node] (v62) at (31.0,-5) {};
+\draw (v31) -- (v62);
+\node[normal node] (v63) at (32.0,-5) {};
+\draw (v31) -- (v63);
+\end{tikzpicture}
+
+\end{document}
