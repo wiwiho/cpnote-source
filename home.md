@@ -1,6 +1,6 @@
 # WiwiHo 的競程筆記
 
-歡迎來到 WiwiHo 的~~唬爛專區~~競程筆記，這裡會整理我的筆記和上過課的內容，希望對你有幫助。
+歡迎來到 WiwiHo 的~~唬爛專區~~競程筆記，這裡會整理我的筆記和上過課的內容，希望對你有幫助。這裡是一個最近沒什麼在更新和維護的地方，最近我大部分的時間都在寫 [NTUCPC Guide](https://guide.ntucpc.org/)，歡迎去看看。
 
 文章原檔都在 [GitHub](https://github.com/wiwiho/cpnote-source) 上，如果有任何疑問，請至 [issue](https://github.com/wiwiho/cpnote-source/issues)，~~如果你想幫我寫，請至 [pull request](https://github.com/wiwiho/cpnote-source/pulls)~~。
 
