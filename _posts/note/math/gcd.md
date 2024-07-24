@@ -42,7 +42,7 @@ $$\begin{align*}
     & = \gcd(b, a \bmod b) \\
     & = \gcd(b, a - \lfloor \frac{a}{b} \rfloor b) \\
     & = bx' + (a - \lfloor \frac{a}{b} \rfloor b)y' \\
-    & = ay' + b(x' - \lfloor \frac{a}{b} \rfloor y)
+    & = ay' + b(x' - \lfloor \frac{a}{b} \rfloor y')
 \end{align*}$$
 
 得出 $x=y'$、$y=x' - \lfloor \frac{a}{b} \rfloor y'$，所以先求 $x',y'$ 就可以算出 $x,y$，終止條件一樣是當 $b=0$ 時，回傳 $(1,0)$ 即可。
